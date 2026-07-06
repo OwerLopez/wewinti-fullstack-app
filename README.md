@@ -1,12 +1,44 @@
-# React + Vite
+# WeWinTI — Full-Stack Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![NestJS](https://img.shields.io/badge/NestJS-Backend-E0234E?style=for-the-badge&logo=nestjs)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=for-the-badge&logo=vite)
 
-Currently, two official plugins are available:
+Full-stack web platform built for the **WeWin TI** initiative: a React 19 SPA with authentication flows, protected routing and a service layer, backed by a **NestJS** API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Architecture
 
-## Expanding the ESLint configuration
+```
+├── src/                 # React frontend
+│   ├── auth/            # Authentication (context + guards)
+│   ├── components/      # Reusable UI components
+│   ├── layouts/         # App shells / page layouts
+│   ├── pages/           # Route views
+│   ├── routes/          # Router config (protected routes)
+│   └── services/        # API clients (axios)
+└── backend/             # NestJS API
+    ├── src/             # Modules, controllers, services
+    └── test/            # E2E tests
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Stack
+
+| Layer | Tech |
+|-------|------|
+| Frontend | React 19 · React Router 7 · React Hook Form · Tailwind CSS v4 · Axios |
+| Backend | NestJS (TypeScript) · ESLint · Prettier |
+| Tooling | Vite (SWC) · npm |
+
+## Quick start
+
+```bash
+# Frontend
+npm install && npm run dev
+
+# Backend
+cd backend && npm install && npm run start:dev
+```
+
+---
+**Ower Frank Lopez Arela** — Backend & Data Engineering · [Portfolio](https://owerlopez.dev) · [LinkedIn](https://linkedin.com/in/ower-frank-lopez-arela-29558a285)
