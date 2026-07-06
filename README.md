@@ -40,5 +40,6 @@ npm install && npm run dev
 cd backend && npm install && npm run start:dev
 ```
 
----
-**Ower Frank Lopez Arela** — Backend & Data Engineering · [Portfolio](https://owerlopez.dev) · [LinkedIn](https://linkedin.com/in/ower-frank-lopez-arela-29558a285)
+## 👥 Team
+
+Built by [@OwerLopez](https://github.com/OwerLopez) and [@CZrich](https://github.com/CZrich).
